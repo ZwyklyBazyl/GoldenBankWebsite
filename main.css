@@ -1,0 +1,119 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url("cash.jpg");
+}
+
+#loginDiv
+{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #000;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#createDiv
+{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #000;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footerDiv
+{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #000;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: fixed;
+    left: 50%;
+    margin: 0 -300px;
+    bottom: 30px;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+li
+{
+    padding: 0 5px;   
+}
+
+a:hover
+{
+    color: #ddb152;
+}
+
+a:focus
+{
+    color: #bc9745;
+}
+
+.formInput
+{
+    margin: 10px auto;   
+
+}
+
+input{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input:focus{
+    outline-color: #ddb152;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ddb152;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #bc9745;
+}
