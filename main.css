@@ -50,7 +50,7 @@ body
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
     position: fixed;
     left: 50%;
     margin: 0 -300px;
@@ -71,14 +71,16 @@ li
     padding: 0 5px;   
 }
 
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
 a:hover
 {
     color: #ddb152;
-}
-
-a:focus
-{
-    color: #bc9745;
+    cursor: pointer;
 }
 
 .formInput
