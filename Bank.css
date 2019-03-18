@@ -1,6 +1,5 @@
 *
 {
-
     margin: 0;
     padding: 0;
 }
@@ -15,17 +14,51 @@ header
 {
     position: relative;
     min-width: 800px;
+    margin: 0 auto;
     width: 60%;
     display: flex;
-    margin: 10px auto;
-    border-bottom: solid 1px #cecece;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top-Header
+{
+    position: relative;
+    min-width: 800px;
+    width: 100%;
+    display: flex;
+    padding: 10px auto; 
+}
+
+#bottom-Header
+{
+    min-width: 800px;
+    width: 100%;
+    display: flex;
+    padding: 10px auto;
+    border-bottom: solid 1px #cecece;   
+}
+
+#bottom-Header li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #cecece;
+    height: 40px;  
+    margin: 10px 0;
+}
+
+#bottom-Header span
+{
+    margin: 0 10px;
 }
 
 #logoDiv
 {
     width: 200px;
     margin: 5px 10px;
-    border-right: solid 1px #cecece;
 }
 
 #accountInformation
@@ -36,16 +69,14 @@ header
 
 #footerDiv
 {
-    background: #e5e5e5;
+    background: #ebebeb;
     border-radius: 5px;
-
     min-width: 600px;
-    height: 50px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     position: fixed;
     left: 50%;
     margin: 0 -300px;
@@ -69,7 +100,7 @@ li
 a
 {
     text-decoration: none;
-    color: #000;
+    color: #505050;
 }
 
 a:hover
@@ -92,4 +123,127 @@ input[type=button] {
 
 input[type=button]:hover {
     background-color: #bc9745;
+}
+
+main
+{
+    position: relative;
+    min-width: 800px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+#accountsSection {
+    width: 100%;
+    position: relative;
+    display: flex;
+    border-bottom: solid 1px #cecece;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#accountsHolder
+{
+    width: 40%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #cecece;
+}
+
+#accountsInfo
+{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddb152;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 0 1px #000;   
+}
+
+#accountHistory
+{
+    width: 55%;   
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#accountHistory h2
+{
+    font-size: 24px;   
+    font-weight: 300;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #cecece;
+}
+
+.historyBar
+{
+    width: 100%;
+    display: flex;
+
+}
+
+.expenditure, .income
+{
+    width: 100px;
+    height: 80%;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expenditure
+{
+    background: #DB435E;
+}
+
+.income
+{
+    background: #66ba75;   
+}
+
+#promotion-Gallery
+{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1
+{
+    font-size: 36px;   
+    font-weight: 400;
+}
+
+h3
+{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+span
+{
+    color: #505050;  
 }
