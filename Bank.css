@@ -118,7 +118,7 @@ input[type=button] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
+    outline: none;
 }
 
 input[type=button]:hover {
@@ -135,10 +135,12 @@ main
     margin: 10px auto;
 }
 
-#accountsSection {
+#accountsSection, #contactSection {
     width: 100%;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-content: center;
     border-bottom: solid 1px #cecece;
     padding: 10px;
     box-sizing: border-box;
@@ -246,4 +248,17 @@ h3
 span
 {
     color: #505050;  
+}
+
+#contactUs {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddb152;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 0 1px #000; 
 }
