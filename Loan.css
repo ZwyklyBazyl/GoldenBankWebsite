@@ -58,6 +58,7 @@ h6
 
 .rangeSlider:hover {
     opacity: 1;
+    outline: none;
 }
 
 .rangeSlider::-webkit-slider-thumb {
@@ -69,6 +70,7 @@ h6
     border: solid 3px #bc9745;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
 }
 
 .rangeSlider::-moz-range-thumb {
@@ -78,6 +80,7 @@ h6
     border: solid 3px #bc9745;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
 }
 
 input[type=submit] {

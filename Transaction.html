@@ -3,8 +3,9 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Strona główna</title>
+        <title>Wykonaj transakcję</title>
         <link rel="stylesheet" href="Bank.css">
+        <link rel="stylesheet" href="Transaction.css">
     </head>
 
     <body>
@@ -87,48 +88,58 @@
 
         <main>
 
-            <section id="accountsSection">
 
-                <div id="accountsHolder">
+            <section id="transactionSection">
+                <!--
+if we had already taken some loan there will be a message that first we need to pay it off
+-->
+                <div id="transactionDiv">
 
-                    <div id="accountsInfo">
+                    <h1>Wykonaj transakcję</h1>
 
-                        <h1>4000,78 pln</h1>
-                        <h3>Dostępne środki</h3>
+                    <div id="accountDiv">
 
-                    </div>
+                        <h3>Nr rachunku:</h3>
 
-                </div>
-
-                <div id="accountHistory">
-
-                    <a href="#"><h2>Historia</h2></a>
-
-                    <div class="historyBar">
-
-                        <span class="expenditure">-1460,20 pln</span> | DD.MM.RRRR | Odbiorca 
+                        <input type="number" min="1000" max="9999" class="inputClass" id="accountNumber">                
 
                     </div>
 
-                    <div class="historyBar">
+                    <div id="accountDiv">
 
-                        <span class="income">+415,70 pln</span> | DD.MM.RRRR | Nadawca   
+                        <h3>Nazwa odbiorcy:</h3>
 
-                    </div>
-
-                    <div class="historyBar">
-
-                        <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
+                        <input type="text" class="inputClass" id="recipientName">                
 
                     </div>
 
+                    <div id="accountDiv">
 
+                        <h3>Kwota:</h3>
 
-                </div>
+                        <input type="number" min="1" class="inputClass" id="cashAmount">                
+
+                    </div>
+
+                    <div id="accountDiv">
+
+                        <h3>Tytuł przelewu:</h3>
+
+                        <input type="text" class="inputClass" id="title">                
+
+                    </div>
+
+                    <div id="submitButtons">
+
+                        <input type="submit" value="Dodaj odbiorcę">
+                        <input type="submit" value="Akceptuj">
+
+                    </div>
+
+                </div>    
 
             </section>
 
-            <section id="promotion-Gallery">GALERIA PROMOCJI (KREDYT BEZ PROWIZJI, LOKATA Z WYSOKIM PROCENTEM, AKTUALNE KURSY WALUT)</section>
 
         </main>
 
@@ -153,6 +164,9 @@
 
 
         </footer>
+
+
+        <script src="Loan.js"></script>
 
     </body>
 

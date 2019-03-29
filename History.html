@@ -3,8 +3,9 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Strona główna</title>
+        <title>Historia konta</title>
         <link rel="stylesheet" href="Bank.css">
+        <link rel="stylesheet" href="History.css">
     </head>
 
     <body>
@@ -87,39 +88,38 @@
 
         <main>
 
-            <section id="accountsSection">
-
-                <div id="accountsHolder">
-
-                    <div id="accountsInfo">
-
-                        <h1>4000,78 pln</h1>
-                        <h3>Dostępne środki</h3>
-
-                    </div>
-
-                </div>
+            <section id="historySection">
 
                 <div id="accountHistory">
 
-                    <a href="#"><h2>Historia</h2></a>
+                    <h1>Historia</h1>
 
-                    <div class="historyBar">
+                    <!-- 
+if(records % 25 == 0) pages = records/pages
+else pages = (records/pages) + 1
+for(int i = 1 * page; i < 25 * page; i++) take records and initialize them as transactions below-->
+
+                    <div class="transaction">
 
                         <span class="expenditure">-1460,20 pln</span> | DD.MM.RRRR | Odbiorca 
 
+                        <img src="Icons/Other/Arrow.png" width="25px" height="25px">
+
                     </div>
 
-                    <div class="historyBar">
+                    <div class="transaction">
 
                         <span class="income">+415,70 pln</span> | DD.MM.RRRR | Nadawca   
+                        <img src="Icons/Other/Arrow.png" width="25px" height="25px">
 
                     </div>
 
-                    <div class="historyBar">
+                    <div class="transaction">
 
                         <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
 
+                        <img src="Icons/Other/Arrow.png" width="25px" height="25px">
+                        
                     </div>
 
 
@@ -127,8 +127,6 @@
                 </div>
 
             </section>
-
-            <section id="promotion-Gallery">GALERIA PROMOCJI (KREDYT BEZ PROWIZJI, LOKATA Z WYSOKIM PROCENTEM, AKTUALNE KURSY WALUT)</section>
 
         </main>
 

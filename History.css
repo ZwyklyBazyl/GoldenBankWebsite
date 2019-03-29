@@ -1,0 +1,35 @@
+#historySection
+{
+    margin-top: 50px;
+}
+
+#accountHistory
+{
+    height: 1000px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1
+{
+    margin-bottom: 30px;
+    border-bottom: solid 1px #cecece;
+}
+
+.transaction
+{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid 1px #cecece;
+}
+
+.transaction img
+{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
