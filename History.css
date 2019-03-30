@@ -5,7 +5,8 @@
 
 #accountHistory
 {
-    height: 1000px;  
+    height: 1000px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -21,15 +22,45 @@ h1
 {
     position: relative;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: 15px;
     margin-top: 20px;
-    border-bottom: solid 1px #cecece;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 2px solid #ddb152;
+    outline: none;
+    box-shadow: 0 0 3px #000;
+    transition: all 0.2s ease-in-out;
 }
 
-.transaction img
+.transaction button
 {
+    appearance: none;
+    -webkit-    appearance: none;
     position: absolute;
-    right: 0;
+    border: 0;
+    background:#fff;
+    right: 10px;
     cursor: pointer;
+    outline: none;
+}
+
+.expenditure, .income
+{
+    margin-bottom: 0;
+    height: 25px;
+}
+
+.onDropdownTransaction
+{
+    height: 100px;
+    align-items: flex-start;
+
+}
+.onDropdownTransaction button
+{
+    bottom: 0;  
+    transform: rotate(180deg); 
 }
