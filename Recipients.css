@@ -1,0 +1,210 @@
+#recipientsSection
+{
+    margin-top: 50px;
+}
+
+#recipients
+{
+    min-height: 500px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1
+{
+    margin-bottom: 30px;
+    border-bottom: solid 1px #cecece;
+}
+
+h2
+{
+    font-weight: 200;
+    color: #505050;   
+}
+
+.recipient
+{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 2px solid #ddb152;
+    outline: none;
+    box-shadow: 0 0 3px #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.recipient button
+{
+    appearance: none;
+    -webkit-    appearance: none;
+    position: absolute;
+    border: 0;
+    background:#fff;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.onDropdown
+{
+    height: 160px;
+    justify-content: flex-start;
+
+}
+.onDropdown button
+{
+    bottom: 0;  
+    transform: rotate(180deg); 
+}
+
+.visible
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.invisible
+{
+    display: none;
+}
+
+.invisibleActive
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    height: 150px;
+}
+
+.buttonsDiv
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsDiv input[type=button]
+{
+    margin: 10px 10px;
+}
+
+.title
+{
+    padding: 3px 3px;
+    border-radius: 5px;
+    height: 100%;
+    background: #cecece;
+}
+
+.bottomBorder
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bottomBorder:after
+{
+    position: absolute;
+    content: '';
+    border-bottom: solid 1px #cecece;
+    width: 550px;
+    bottom: -10px;
+    left: 0;
+}
+
+.addRecipient
+{
+    position: relative;
+    padding: 15px 30px;
+    width: 400px;
+    height: 300px;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: 
+}
+
+.addRecipient .bottomBorder
+{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.addRecipient .bottomBorder:after
+{
+    width: 400px; 
+    bottom: -25px;
+}
+
+.addRecipient h2
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.addRecipient p
+{
+    font-size: 18px;   
+}
+
+input[type=number], input[type=text]{
+    width: 300px;
+    height: 25px;
+    margin: 5px 0;
+    margin-right: 50px;
+    padding: 12px 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.15s linear;
+}
+
+input:focus{
+    border-color: #ddb152;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.addRecipient input[type=submit] {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddb152;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.addRecipient input[type=submit]:hover {
+    background-color: #bc9745;
+}

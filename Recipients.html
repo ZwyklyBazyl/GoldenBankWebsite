@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Historia konta</title>
         <link rel="stylesheet" href="Bank.css">
-        <link rel="stylesheet" href="History.css">
+        <link rel="stylesheet" href="Recipients.css">
     </head>
 
     <body>
@@ -88,120 +88,134 @@
 
         <main>
 
-            <section id="historySection">
+            <section id="recipientsSection">
 
-                <div id="accountHistory">
+                <div id="recipients">
 
-                    <h1>Historia</h1>
+                    <h1>Odbiorcy</h1>
 
                     <!-- 
 if(records % 25 == 0) pages = records/pages
 else pages = (records/pages) + 1
 for(int i = 1 * page; i < 25 * page; i++) take records and initialize them as transactions below-->
 
-                    <div class="transaction">
+                    <div class="recipient addRecipient">
+                        <h2>Dodaj Odbiorcę</h2>
+
+                        <span class="bottomBorder"></span>
+
+                        <form action="link">
+                            <p>Nr rachunku: <input type="number"> </p>
+
+                            <p>Nazwa: <input type="text"> </p>
+
+                            <p>Adres: <input type="text"> </p>
+                            
+                            <input type="submit" value="Dodaj">
+                        </form>
+
+
+                    </div>
+
+
+                    <div class="recipient">
 
                         <div class="visible">
-                            <span class="expenditure">-1460,20 pln</span> | DD.MM.RRRR | Odbiorca 
+                            <h2>Odbiorca</h2>
                         </div>
 
                         <div class="invisible">
+
+                            <div class="buttonsDiv">
+
+                                <input type="button" value="Wykonaj przelew">
+
+                                <input type="button" value="Edytuj odbiorcę ">
+
+                                <input type="button" value="Usuń odbiorcę">
+
+                            </div>
+
+                            <p class="bottomBorder"></p>
+
                             <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM</span>
+
+                            <p class="bottomBorder">Nazwa: <span class="title">Imie Nazwisko</span></p>
+
+                            <p class="bottomBorder">Adres: <span class="title">Ulica, Kod pocztowy, Miasto</span></p>
+
+
                         </div>
 
                         <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
 
                     </div>
 
-                    <div class="transaction">
+                    <div class="recipient">
 
                         <div class="visible">
-                            <span class="income">+415,70 pln</span> | DD.MM.RRRR | Nadawca  
+                            <h2>Odbiorca</h2>
                         </div>
 
                         <div class="invisible">
+
+                            <div class="buttonsDiv">
+
+                                <input type="button" value="Wykonaj przelew">
+
+                                <input type="button" value="Edytuj odbiorcę ">
+
+                                <input type="button" value="Usuń odbiorcę">
+
+                            </div>
+
+                            <p class="bottomBorder"></p>
+
                             <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM</span>
+
+                            <p class="bottomBorder">Nazwa: <span class="title">Imie Nazwisko</span></p>
+
+                            <p class="bottomBorder">Adres: <span class="title">Ulica, Kod pocztowy, Miasto</span></p>
+
+
                         </div>
 
                         <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
 
                     </div>
 
-                    <div class="transaction">
+                    <div class="recipient">
 
                         <div class="visible">
-                            <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
+                            <h2>Odbiorca</h2>
                         </div>
 
                         <div class="invisible">
+
+                            <div class="buttonsDiv">
+
+                                <input type="button" value="Wykonaj przelew">
+
+                                <input type="button" value="Edytuj odbiorcę ">
+
+                                <input type="button" value="Usuń odbiorcę">
+
+                            </div>
+
+                            <p class="bottomBorder"></p>
+
                             <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </span>
+
+                            <p class="bottomBorder">Nazwa: <span class="title">Imie Nazwisko</span></p>
+
+                            <p class="bottomBorder">Adres: <span class="title">Ulica, Kod pocztowy, Miasto</span></p>
+
+
                         </div>
 
                         <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
 
                     </div>
-                    
-                                        <div class="transaction">
-
-                        <div class="visible">
-                            <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
-                        </div>
-
-                        <div class="invisible">
-                            <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </span>
-                        </div>
-
-                        <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
-
-                    </div>
-                    
-                                        <div class="transaction">
-
-                        <div class="visible">
-                            <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
-                        </div>
-
-                        <div class="invisible">
-                            <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </span>
-                        </div>
-
-                        <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
-
-                    </div>
-                    
-                                        <div class="transaction">
-
-                        <div class="visible">
-                            <span class="expenditure">-300,00 pln</span> | DD.MM.RRRR | Odbiorca 
-                        </div>
-
-                        <div class="invisible">
-                            <p class="bottomBorder">Nr rachunku: <span class="title">1234</span></p>
-                            <p>Tytuł przelewu:</p>
-                            <span class="title">
-                                LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </span>
-                        </div>
-
-                        <button class="dropdown"><img src="Icons/Other/Arrow.png" width="25px" height="25px"></button>
-
-                    </div>
-
-
 
                 </div>
 
@@ -231,7 +245,7 @@ for(int i = 1 * page; i < 25 * page; i++) take records and initialize them as tr
 
         </footer>
 
-        <script src="History.js"></script>
+        <script src="Recipients.js"></script>
 
     </body>
 

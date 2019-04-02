@@ -9,6 +9,8 @@ body
 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-image: url("cash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #loginDiv
@@ -61,6 +63,11 @@ body
     position: relative;
 }
 
+#loginDiv h1
+{
+    margin: 20px 0;
+}
+
 ul
 {
     list-style-type: none;
@@ -97,15 +104,16 @@ input{
     width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    outline: none;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    transition: all 0.15s linear;
 }
 
 
 input:focus{
-    outline-color: #ddb152;
+    border-color: #ddb152;
 }
 
 input[type=submit] {
@@ -170,5 +178,5 @@ input[type=submit]:hover {
 
 #cookiesDiv p
 {
- text-align: justify;   
+    text-align: justify;   
 }
