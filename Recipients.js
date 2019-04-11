@@ -12,14 +12,13 @@ for(var i=0; i<buttons.length;i++)
 function buttonAddListener()
 {
     if(activeButton != null)
-    {  activeButton.parentNode.classList.remove('onDropdownTransaction');
-     activeButton.parentNode.childNodes[1].classList.remove('bottomBorder');
+    {  activeButton.parentNode.classList.remove('onDropdownRecipient');
      activeButton.addEventListener('click', buttonAddListener);
      activeButton.removeEventListener('click', buttonRemoveListener);
      activeButton.parentNode.childNodes[3].classList.remove('invisibleActive');
     }
 
-    this.parentNode.classList.add('onDropdownTransaction'); this.parentNode.childNodes[1].classList.add('bottomBorder');
+    this.parentNode.classList.add('onDropdownRecipient'); 
     this.parentNode.childNodes[3].classList.add('invisibleActive');
     activeButton = this;
     this.addEventListener('click', buttonRemoveListener);
@@ -28,7 +27,7 @@ function buttonAddListener()
 
 function buttonRemoveListener()
 {
-    this.parentNode.classList.remove('onDropdownTransaction'); this.parentNode.childNodes[1].classList.remove('bottomBorder'); this.parentNode.childNodes[3].classList.remove('invisibleActive');
+    this.parentNode.classList.remove('onDropdownRecipient'); this.parentNode.childNodes[3].classList.remove('invisibleActive');
     activeButton = null;
     this.addEventListener('click', buttonAddListener);
     this.removeEventListener('click', buttonRemoveListener);

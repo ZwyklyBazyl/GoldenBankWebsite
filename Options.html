@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Historia konta</title>
+        <link rel="stylesheet" href="Bank.css">
+        <link rel="stylesheet" href="Options.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <section id="top-Header">
+
+                <section>
+                    <div id="logoDiv">
+                        <img src="Logo2.png" alt="Logo">
+                    </div>
+                </section>
+
+                <section>
+                    <div id="accountInformation">
+                        <ul>
+                            <li>
+                                <a href="Recipients.html"><img src="Icons/Other/Users.png" width="15px" height="15px"> Odbiorcy |</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="Icons/Other/Settings.png" width="15px" height="15px"> Ustawienia |</a>
+                            </li>
+                            <li>
+                                <img src="Icons/Other/User.png" width="15px" height="15px"> <span>Nazwa Konta</span>
+                            </li>
+                            <li>
+                                <input type="button" value="Wyloguj się">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </section>
+
+            <section id="bottom-Header">
+
+                <section>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <span>
+                                    <a href="Home.html"><img src="Icons/Other/Home.png" width="40px" height="40px"></a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="Transaction.html">Wykonaj transakcję</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="Loan.html">Pożyczka</a>
+                                </span>
+                            </li>
+                            <li> 
+                                <span>
+                                    <a href="#">Promocje</a>
+                                </span>
+                            </li>
+                            <li> 
+                                <span>
+                                    <a href="Investments.html">Inwestycje</a>
+                                </span>
+                            </li>
+                            <li> 
+                                <span>
+                                    <a href="#">Kursy</a>
+                                </span>
+                            </li>
+                        </ul>                      
+                    </div>
+
+                </section>
+
+            </section>
+
+        </header>
+
+        <main>
+
+            <section id="optionsSection">
+
+                <div id="optionsHolder">
+
+                    <h1>Ustawienia</h1>
+
+                    <div class="options">                   
+
+                        <h2>Dane użytkownika</h2>
+
+                        <span class="bottomBorder"></span>
+
+                        <form action="link">
+                            <p class="bottomBorder">Nr rachunku: <span class="greyBG">1234</span> </p>
+
+                            <p class="bottomBorder">Nazwa: <span class="greyBG">Jan Kowalski</span></p>
+
+                            <p class="bottomBorder editable">Adres: 
+                                <span class="greyBG" id="address">Jan Kowalski</span>
+                                <img src="Icons/Other/Edit.png" id="addressButton">
+                            </p>
+
+                            <p class="editable">Telefon: 
+                                <span class="greyBG"  id="phone">Jan Kowalski</span>
+                            <img src="Icons/Other/Edit.png" id="phoneButton">
+                            </p>
+
+                            <input type="submit" value="Zapisz zmiany">
+                        </form>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div id="footerDiv">
+                <ul>
+                    <li>
+                        <a href="#">Polityka Cookies |</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Skontaktuj się z nami |</a>
+                    </li>
+                    <li>
+                        <a href="#">O bezpieczeństwie |</a>
+                    </li>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </footer>
+
+        <script src="Options.js"></script>
+
+    </body>
+
+</html>

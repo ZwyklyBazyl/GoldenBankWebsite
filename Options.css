@@ -1,0 +1,183 @@
+#optionsSection
+{
+    margin-top: 50px;
+}
+
+#optionsHolder
+{
+    position: relative;
+    min-height: 500px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1
+{
+    margin-bottom: 30px;
+    border-bottom: solid 1px #cecece;
+}
+
+h2
+{
+    font-weight: 200;
+    color: #505050;   
+}
+
+.greyBG
+{
+    padding: 3px 3px;
+    border-radius: 5px;
+    height: 100%;
+    background: #cecece;
+}
+
+.options
+{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 400px;
+    height: 320px; 
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid #ddb152;
+    outline: none;
+    box-shadow: 0 0 3px #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.options button
+{
+    appearance: none;
+    -webkit-    appearance: none;
+    position: absolute;
+    border: 0;
+    background:#fff;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.options input[type=submit] {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddb152;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.options input[type=submit]:hover {
+    background-color: #bc9745;
+}
+
+
+.bottomBorder
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bottomBorder:after
+{
+    position: absolute;
+    content: '';
+    border-bottom: solid 1px #cecece;
+    width: 550px;
+    bottom: -10px;
+    left: 0;
+}
+
+.options .bottomBorder
+{
+    padding-top: 20px;
+}
+
+.options .bottomBorder:after
+{
+    width: 400px; 
+    bottom: -10px;
+}
+
+.options h2
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.options p
+{
+    font-size: 18px; 
+    padding-top: 10px;
+}
+
+.editable
+{
+    position: relative;
+}
+
+.editable img
+{
+    position: absolute;
+    left: 350px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.invisible
+{
+    display: none;
+}
+
+.inputClass
+{
+    width: 100px;
+    height: 25px;
+    margin: 0;
+    margin-right: 50px;
+    padding: 12px 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #505050;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #cecece;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.15s linear;
+}
+
+.inputClass:focus
+{
+    width: 250px;
+    border-color: #ddb152;
+    outline: none;
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
