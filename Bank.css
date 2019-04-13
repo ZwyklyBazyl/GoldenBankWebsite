@@ -201,7 +201,7 @@ main
 
 }
 
-.expenditure, .income
+.expenditure, .income, .buy, .sell
 {
     width: 100px;
     height: 80%;
@@ -213,14 +213,33 @@ main
     align-items: center;
 }
 
-.expenditure
+.expenditure, .buy
 {
     background: #DB435E;
 }
 
-.income
+.income, .sell
 {
     background: #66ba75;   
+}
+
+#promotionSection
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#promotionSection h1
+{
+    margin-bottom: 30px;
+    font-weight: 100;
+    color: #505050;
+    border-bottom: solid 1px #cecece;
 }
 
 #promotionGallery
@@ -228,8 +247,8 @@ main
     height: 400px;
     width: 100%;
     overflow: none;
-    animation: slide 10s infinite;
-    background-image: url(FirstWP.jpeg);
+    animation: slide 15s infinite;
+    background-image: url(Loan.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -239,15 +258,15 @@ main
 {
     0%
     {
-        background-image: url(FirstWP.jpeg);   
+        background-image: url(Loan.png);
     }
     33%
     {
-        background-image: url(SecondWP.jpeg);   
+        background-image: url(Investment.png);   
     }
     67%
     {
-        background-image: url(ThirdWP.jpeg);   
+        background-image: url(Account.png);   
     }
 }
 

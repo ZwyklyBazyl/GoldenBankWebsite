@@ -1,0 +1,74 @@
+#exchangeSection
+{
+    margin-top: 50px;
+}
+
+#exchangeMain
+{
+    min-height: 500px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1
+{
+    margin-bottom: 30px;
+    border-bottom: solid 1px #cecece;
+}
+
+.exchange
+{
+    position: relative;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 2px solid #ddb152;
+    outline: none;
+    box-shadow: 0 0 3px #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.buy, .sell
+{
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+}
+
+.flexBox
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bottomBorder
+{
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.bottomBorder:after
+{
+    position: absolute;
+    content: '';
+    border-bottom: solid 1px #cecece;
+    width: 550px;
+    bottom: -10px;
+    left: 0;
+}

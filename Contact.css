@@ -1,4 +1,4 @@
-#contactUs {
+#contactUs, .localization{
     margin-top: 50px;
     height: 300px;
     width: 500px;
@@ -31,4 +31,22 @@ h6
 {
     font-size: 9px;
     margin-top: 50px;  
+}
+
+p
+{
+    margin-top: 30px;
+ padding: 20px;   
+}
+
+.localization
+{
+ width: 700px; 
+    height: 550px;
+    padding: 20px;
+}
+
+.localization h1
+{
+ margin-bottom: 30px;   
 }
